@@ -3,7 +3,7 @@
 (function () {
   "use strict";
 
-  emailjs.init("PUBLIC_KEY_ICI"); // Mets ton Public Key EmailJS ici
+  emailjs.init("LnEvehtqlRPN2AAGH"); // Mets ton Public Key EmailJS ici
 
   let form = document.getElementById('contact-form');
 
