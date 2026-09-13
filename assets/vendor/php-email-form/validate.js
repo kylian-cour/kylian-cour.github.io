@@ -20,7 +20,7 @@
     errorMessage.classList.remove('d-block');
     sentMessage.classList.remove('d-block');
 
-    emailjs.send("service_oyigoax", "TEMPLATE_ID_ICI", {
+    emailjs.send("service_oyigoax", "template_4vx0fte", {
       name: form.name.value,
       email: form.email.value,
       subject: form.subject.value,
