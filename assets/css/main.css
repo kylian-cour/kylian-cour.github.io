@@ -1627,3 +1627,73 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/*--------------------------------------------------------------
+# Téléchargement du CV
+--------------------------------------------------------------*/
+.cv-download {
+  padding: 50px 0;
+}
+
+.cv-download h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cv-download p {
+  margin-bottom: 25px;
+}
+
+.cv-download .btn-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-family: var(--nav-font);
+  font-weight: 500;
+  font-size: 16px;
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--accent-color), transparent 70%);
+  transition: 0.3s;
+}
+
+.cv-download .btn-cv i {
+  font-size: 20px;
+  line-height: 0;
+}
+
+.cv-download .btn-cv:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), #000 15%);
+  transform: translateY(-2px);
+}
+
+/* Raccourci « Mon CV » dans le menu : bouton sur ordinateur, lien normal sur mobile */
+@media (min-width: 1200px) {
+  .navmenu a.nav-cv {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    padding: 7px 20px;
+    border-radius: 50px;
+    font-weight: 500;
+  }
+
+  .navmenu a.nav-cv:before {
+    display: none;
+  }
+
+  .navmenu li:hover>a.nav-cv,
+  .navmenu a.nav-cv:hover {
+    background: color-mix(in srgb, var(--accent-color), #000 15%);
+    color: var(--contrast-color);
+  }
+}
+
+@media (max-width: 1199px) {
+  .navmenu a.nav-cv {
+    color: var(--accent-color);
+    font-weight: 600;
+  }
+}
