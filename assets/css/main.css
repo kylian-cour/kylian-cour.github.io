@@ -1697,3 +1697,127 @@ section,
     font-weight: 600;
   }
 }
+
+/*--------------------------------------------------------------
+# Projet : bloc texte + galerie
+--------------------------------------------------------------*/
+.services .project-card {
+  background-color: var(--surface-color);
+  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  padding: 50px 40px;
+}
+
+.services .project-card .icon {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.services .project-card h3 {
+  font-weight: 700;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+
+.services .project-card .project-text p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.services .project-card .project-text p:last-child {
+  margin-bottom: 0;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.project-gallery a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  aspect-ratio: 16 / 10;
+  background: color-mix(in srgb, var(--default-color), transparent 94%);
+}
+
+.project-gallery a.is-banner {
+  grid-column: 1 / -1;
+  aspect-ratio: 1752 / 377;
+}
+
+.project-gallery a.is-wide {
+  grid-column: 1 / -1;
+  aspect-ratio: 21 / 8;
+}
+
+.project-gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  transition: transform 0.4s ease;
+}
+
+.project-gallery .zoom {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+  background: color-mix(in srgb, var(--accent-color), transparent 35%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-gallery a:hover img,
+.project-gallery a:focus-visible img {
+  transform: scale(1.05);
+}
+
+.project-gallery a:hover .zoom,
+.project-gallery a:focus-visible .zoom {
+  opacity: 1;
+}
+
+.project-gallery a:focus-visible {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.project-hint {
+  margin: 14px 0 0 0;
+  font-size: 13px;
+  text-align: center;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+}
+
+.project-hint i {
+  color: var(--accent-color);
+  margin-right: 4px;
+}
+
+@media (max-width: 767px) {
+  .services .project-card {
+    padding: 30px 20px;
+  }
+
+  .project-gallery {
+    gap: 8px;
+  }
+}
