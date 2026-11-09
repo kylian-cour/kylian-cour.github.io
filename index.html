@@ -271,43 +271,80 @@
 
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4 gx-lg-5">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
+            <div class="col-lg-5 project-text">
               <div class="icon">
                 <i class="bi bi-easel"></i>
               </div>
               <h3>Développement d’un CRM</h3>
               <p>Réalisé lors de mon stage de première année de BTS, ce projet m’a permis de travailler en mode projet 
                 et de mettre en pratique les connaissances acquises en cours.
-              </p><br>
-              
+              </p>
+
               <p>Au début du projet, j’ai réalisé un cahier des charges ainsi que des maquettes fonctionnelles, que j’ai 
                 ensuite présentés au responsable de l’entreprise. À la suite de cet entretien, j’ai commencé le développement 
                 de la solution en prenant en compte l’architecture et le code existants.
-              </p><br>
-              
+              </p>
+
               <p>L’objectif était de développer un CRM permettant de gérer l’ensemble du processus d’achat et de gestion des produits. 
                 J’ai notamment développé plusieurs espaces : un espace permettant aux employés de créer des demandes d’achat, un espace 
                 dédié à la responsable pour passer les commandes, ainsi qu’un espace permettant aux employés de réceptionner les produits 
                 et de les mettre en stock.
-              </p><br>
-              
+              </p>
+
               <p>Le projet comprenait également la gestion des informations relatives aux produits (libellé, prix, quantité, fournisseur, 
                 numéro de série ou de lot, etc.), tout en veillant à garantir la cohérence et l’intégrité des données en base de données. 
                 J’ai également mis en place une gestion des droits utilisateurs ainsi que des mesures de sécurité pour protéger le CRM et 
                 la base de données.
-              </p><br>    
-              
+              </p>
+
               <p>À l’issue des sept semaines de stage, j’ai livré le projet dans son intégralité, avec une solution fonctionnelle répondant 
                 aux besoins définis par l’entreprise.
               </p>
-              
-            </div>
-          </div><!-- End Service Item -->
+            </div><!-- End Project Text -->
 
-        </div>
+            <div class="col-lg-7">
+              <div class="project-gallery">
+                <a href="assets/img/projet-crm/crm-01-accueil.png" class="glightbox is-banner" data-gallery="crm" data-title="Page d’accueil du CRM" data-description="Page d’accueil du CRM d’ISP Conseil : navigation par onglets (Clients, Interventions, Demandes d’achats, Stock et facturation) et barre de recherche multicritère." data-desc-position="bottom" aria-label="Agrandir : Page d’accueil du CRM">
+                  <img src="assets/img/projet-crm/crm-01-accueil-miniature.webp" width="800" height="172" alt="Capture d’écran du CRM : Page d’accueil du CRM" loading="lazy">
+                  <span class="zoom"><i class="bi bi-zoom-in"></i></span>
+                </a>
+                <a href="assets/img/projet-crm/crm-02-liste-demandes.png" class="glightbox" data-gallery="crm" data-title="Liste des demandes d’achat" data-description="Suivi de toutes les demandes : recherche par numéro, employé ou descriptif, avec la date, le commentaire et le statut de chaque demande." data-desc-position="bottom" aria-label="Agrandir : Liste des demandes d’achat">
+                  <img src="assets/img/projet-crm/crm-02-liste-demandes-miniature.webp" width="800" height="369" alt="Capture d’écran du CRM : Liste des demandes d’achat" loading="lazy">
+                  <span class="zoom"><i class="bi bi-zoom-in"></i></span>
+                </a>
+                <a href="assets/img/projet-crm/crm-03-creation-demande.png" class="glightbox" data-gallery="crm" data-title="Création d’une demande d’achat" data-description="Formulaire utilisé par un employé : informations générales de la demande, puis liste des produits demandés (libellé, lien, quantité, code produit) avec ajout et suppression de lignes." data-desc-position="bottom" aria-label="Agrandir : Création d’une demande d’achat">
+                  <img src="assets/img/projet-crm/crm-03-creation-demande-miniature.webp" width="800" height="355" alt="Capture d’écran du CRM : Création d’une demande d’achat" loading="lazy">
+                  <span class="zoom"><i class="bi bi-zoom-in"></i></span>
+                </a>
+                <a href="assets/img/projet-crm/crm-04-controle-saisie.png" class="glightbox" data-gallery="crm" data-title="Contrôle des données saisies" data-description="Exemple de contrôle à la saisie : un message d’erreur s’affiche car le code produit « 99999 » n’existe pas dans la base de stock. Cela garantit la cohérence des données enregistrées." data-desc-position="bottom" aria-label="Agrandir : Contrôle des données saisies">
+                  <img src="assets/img/projet-crm/crm-04-controle-saisie-miniature.webp" width="800" height="357" alt="Capture d’écran du CRM : Contrôle des données saisies" loading="lazy">
+                  <span class="zoom"><i class="bi bi-zoom-in"></i></span>
+                </a>
+                <a href="assets/img/projet-crm/crm-05-notification-mail.png" class="glightbox" data-gallery="crm" data-title="Notification par e-mail" data-description="E-mail récapitulatif généré à la création d’une demande : employé, date, descriptif, commentaire et tableau des produits demandés avec leurs liens d’achat." data-desc-position="bottom" aria-label="Agrandir : Notification par e-mail">
+                  <img src="assets/img/projet-crm/crm-05-notification-mail-miniature.webp" width="800" height="356" alt="Capture d’écran du CRM : Notification par e-mail" loading="lazy">
+                  <span class="zoom"><i class="bi bi-zoom-in"></i></span>
+                </a>
+                <a href="assets/img/projet-crm/crm-06-passage-commande.png" class="glightbox" data-gallery="crm" data-title="Passage de la commande" data-description="Espace de la responsable pour commander à partir d’une demande : rappel des produits demandés à gauche, saisie du prix d’achat HT, des frais de port, du coefficient, du fournisseur et de la quantité commandée à droite." data-desc-position="bottom" aria-label="Agrandir : Passage de la commande">
+                  <img src="assets/img/projet-crm/crm-06-passage-commande-miniature.webp" width="800" height="380" alt="Capture d’écran du CRM : Passage de la commande" loading="lazy">
+                  <span class="zoom"><i class="bi bi-zoom-in"></i></span>
+                </a>
+                <a href="assets/img/projet-crm/crm-07-reception-livraison.png" class="glightbox" data-gallery="crm" data-title="Réception et mise en stock" data-description="Espace de réception d’une livraison : pour chaque produit, saisie des lots ou des numéros de série reçus, puis mise en stock." data-desc-position="bottom" aria-label="Agrandir : Réception et mise en stock">
+                  <img src="assets/img/projet-crm/crm-07-reception-livraison-miniature.webp" width="800" height="341" alt="Capture d’écran du CRM : Réception et mise en stock" loading="lazy">
+                  <span class="zoom"><i class="bi bi-zoom-in"></i></span>
+                </a>
+                <a href="assets/img/projet-crm/crm-08-modification-demande.png" class="glightbox is-wide" data-gallery="crm" data-title="Modification d’une demande" data-description="Fiche détaillée d’une demande : statut, produit demandé, informations de commande (fournisseur, prix d’achat et de vente HT, frais de port, coefficient) et livraison associée." data-desc-position="bottom" aria-label="Agrandir : Modification d’une demande">
+                  <img src="assets/img/projet-crm/crm-08-modification-demande-miniature.webp" width="800" height="404" alt="Capture d’écran du CRM : Modification d’une demande" loading="lazy">
+                  <span class="zoom"><i class="bi bi-zoom-in"></i></span>
+                </a>
+              </div>
+              <p class="project-hint"><i class="bi bi-hand-index-thumb"></i> Cliquez sur une image pour l’agrandir et lire sa légende.</p>
+            </div><!-- End Project Gallery -->
+
+          </div>
+        </div><!-- End Project Card -->
 
       </div>
 
