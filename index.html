@@ -670,6 +670,10 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/lang.js"></script>
+
+  <!-- Bouton langue FR / EN -->
+  <button type="button" id="lang-toggle" class="theme-toggle lang-toggle" aria-label="Switch the site to English" title="English">EN</button>
 
   <!-- Bouton mode sombre / clair -->
   <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Passer en mode sombre" title="Mode sombre">
@@ -681,8 +685,9 @@
       var b = document.getElementById('theme-toggle'), r = document.documentElement;
       function maj() {
         var d = r.getAttribute('data-theme') === 'dark';
-        b.setAttribute('aria-label', d ? 'Passer en mode clair' : 'Passer en mode sombre');
-        b.setAttribute('title', d ? 'Mode clair' : 'Mode sombre');
+        var en = r.lang === 'en';
+        b.setAttribute('aria-label', d ? (en ? 'Switch to light mode' : 'Passer en mode clair') : (en ? 'Switch to dark mode' : 'Passer en mode sombre'));
+        b.setAttribute('title', d ? (en ? 'Light mode' : 'Mode clair') : (en ? 'Dark mode' : 'Mode sombre'));
       }
       b.addEventListener('click', function () {
         var d = r.getAttribute('data-theme') === 'dark';
@@ -690,6 +695,7 @@
         try { localStorage.setItem('theme', d ? 'light' : 'dark'); } catch (e) {}
         maj();
       });
+      window.majTheme = maj;
       maj();
     })();
   </script>
