@@ -1919,3 +1919,11 @@ section,
 .theme-toggle .bi-sun-fill { display: none; }
 :root[data-theme="dark"] .theme-toggle .bi-sun-fill { display: inline; }
 :root[data-theme="dark"] .theme-toggle .bi-moon-stars-fill { display: none; }
+
+/* Bouton de langue (FR / EN), à côté du bouton de thème */
+.lang-toggle {
+  left: 69px;
+  font-family: var(--nav-font);
+  font-size: 14px;
+  font-weight: 700;
+}
