@@ -4,6 +4,7 @@
  */
 (function () {
   "use strict";
+  function start() {
   var EN = {
  "Kylian Couroussé – Portfolio BTS SIO option SLAM": "Kylian Couroussé – BTS SIO (SLAM option) Portfolio",
  "Télécharger mon CV (PDF)": "Download my CV (PDF)",
@@ -251,4 +252,8 @@
     });
   }
   if (saved() === 'en') apply('en'); else apply('fr');
+  }
+
+  // Le bouton est placé en bas de la page : attendre que tout soit chargé
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', start); } else { start(); }
 })();
