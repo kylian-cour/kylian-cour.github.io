@@ -1849,3 +1849,18 @@ section,
 .certifications .cert-badges { display: flex; flex-wrap: wrap; gap: 8px; }
 .certifications .cert-badge { background: var(--accent-color); color: var(--contrast-color); border-radius: 50px; padding: 5px 14px; font-size: 13px; font-weight: 500; }
 @media (max-width: 575px) { .certifications .cert-tabs .nav-link { padding: 8px 14px; font-size: 14px; } }
+
+.project-notice {
+  margin: 14px 0 0 0;
+  padding: 10px 14px;
+  font-size: 13px;
+  line-height: 20px;
+  border-left: 4px solid var(--accent-color);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+}
+
+.project-notice i {
+  color: var(--accent-color);
+  margin-right: 4px;
+}
