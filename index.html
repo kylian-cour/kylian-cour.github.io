@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Kylian Couroussé – Portfolio BTS SIO option SLAM</title>
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark')}catch(e){}</script>
   <meta name="description" content="Portfolio de Kylian Couroussé, étudiant en BTS SIO option SLAM (Solutions logicielles et applications métiers) à Nantes : parcours, stages et projets.">
   <meta name="keywords" content="Kylian Couroussé, portfolio, BTS SIO, SLAM, développeur, Full-Stack, Nantes">
 
@@ -669,6 +670,29 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Bouton mode sombre / clair -->
+  <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Passer en mode sombre" title="Mode sombre">
+    <i class="bi bi-moon-stars-fill"></i>
+    <i class="bi bi-sun-fill"></i>
+  </button>
+  <script>
+    (function () {
+      var b = document.getElementById('theme-toggle'), r = document.documentElement;
+      function maj() {
+        var d = r.getAttribute('data-theme') === 'dark';
+        b.setAttribute('aria-label', d ? 'Passer en mode clair' : 'Passer en mode sombre');
+        b.setAttribute('title', d ? 'Mode clair' : 'Mode sombre');
+      }
+      b.addEventListener('click', function () {
+        var d = r.getAttribute('data-theme') === 'dark';
+        if (d) { r.removeAttribute('data-theme'); } else { r.setAttribute('data-theme', 'dark'); }
+        try { localStorage.setItem('theme', d ? 'light' : 'dark'); } catch (e) {}
+        maj();
+      });
+      maj();
+    })();
+  </script>
 
 </body>
 
