@@ -109,7 +109,7 @@
   if (selectTyped) {
     let typed_strings = selectTyped.getAttribute('data-typed-items');
     typed_strings = typed_strings.split(',');
-    new Typed('.typed', {
+    window.heroTyped = new Typed('.typed', {
       strings: typed_strings,
       loop: true,
       typeSpeed: 100,
@@ -143,7 +143,7 @@
   /**
    * Initiate glightbox
    */
-  const glightbox = GLightbox({
+  const glightbox = window.glightbox = GLightbox({
     selector: '.glightbox'
   });
 
